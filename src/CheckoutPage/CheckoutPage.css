@@ -1,0 +1,161 @@
+.checkout-card {
+  margin-bottom: 44px;
+  display: flex;
+  box-shadow: 3px 7px 17px -5px rgba(151, 151, 151, 0.66);
+  border-radius: 20px;
+  width: 80%;
+  margin-top: 68px;
+  justify-content: space-between;
+}
+
+.total-price {
+  width: 80%;
+}
+
+.item-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: -24px;
+}
+
+.thumbnail {
+  height: 48px;
+  margin-left: 24px;
+}
+
+.item-left-cart {
+  background-color: #ff9446;
+  color: #fff;
+  padding: 4px 18px 4px 18px;
+  font-size: 12px;
+  border-radius: 12px;
+  width: 56px;
+  margin-top: 8px;
+}
+
+.item-number {
+  display: flex;
+  gap: 12px;
+}
+
+.item-quantity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.item-dec {
+  background-color: #e86f6f;
+  padding: 0px 4px 0px 4px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.item-inc {
+  background-color: #7fd287;
+  padding: 0px 4px 0px 4px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.item-quantity {
+  padding: 24px;
+}
+
+.item-price {
+  color: #82828b;
+  margin-top: 24px;
+  font-weight: lighter;
+}
+
+.remove-item {
+  margin-top: 24px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.item-center {
+  display: flex;
+  align-items: center;
+  gap: 72px;
+  margin-left: 40%;
+}
+
+.horizontal-rule {
+  background-color: #e6e6eb;
+  height: 2px;
+  border: none;
+}
+
+.text-dark {
+  color: #000;
+}
+
+.text-light {
+  color: #82828b;
+}
+
+.checkout-button {
+  background-color: #7fd287;
+  color: #fff;
+  border-radius: 4px;
+  padding: 12px 48px 12px 48px;
+}
+
+.checkout-button-mobile {
+  display: none;
+}
+
+.offer-text {
+  font-size: 12px;
+  color: #e86f6f;
+}
+
+@media only screen and (max-width: 600px) {
+  .checkout-card {
+    width: 100%;
+  }
+
+  .checkout-button {
+    display: none;
+  }
+
+  .checkout-button-mobile {
+    display: block;
+    background-color: #7fd287;
+    color: #fff;
+    border-radius: 4px;
+    padding: 12px 48px 12px 48px;
+    margin-bottom: 40px;
+    margin-left: 5%;
+  }
+
+  .total-price {
+    width: 100%;
+  }
+
+  .remove-item {
+    margin-left: 8px;
+    margin-right: 12px !important;
+  }
+  .item-center {
+    margin-left: 25%;
+  }
+  .item-details {
+    flex-direction: column;
+  }
+  .item-name {
+    margin-left: 16px;
+    font-size: 16px;
+    margin-top: -8px;
+  }
+  .item-id {
+    margin-left: 16px;
+    font-size: 12px;
+    margin-top: -16px;
+  }
+}

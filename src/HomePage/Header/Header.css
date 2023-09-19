@@ -1,0 +1,124 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company-name {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #bebebe;
+  width: 60%;
+}
+
+.search-icon {
+  height: 24px;
+}
+
+input {
+  padding: 5px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  height: 36px;
+  margin-left: 24px;
+  cursor: pointer;
+}
+
+.icon-avatar {
+  height: 52px;
+  margin-left: 24px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: #007bff;
+}
+
+/* YourComponent.css */
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 60%; /* Set the width of the container */
+  height: 56px;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  overflow: hidden; /* Hide overflow to prevent icon from being cut off */
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-bottom: 16px;
+  box-shadow: 5px 9px 17px -5px rgba(190, 190, 190, 0.42);
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: url("../Assets/searchBarIcon.png") no-repeat right center; /* Add your search icon image */
+  background-size: 20px; /* Adjust the size of the icon */
+}
+
+.search-input::placeholder {
+  color: #ccc; /* Placeholder text color */
+}
+
+.cart-value {
+  margin-bottom: 48px;
+  color: #fff;
+  background-color: #0098ed;
+  border-radius: 50%;
+  padding: 4px 7px 4px 7px;
+  font-size: 8px;
+}
+
+.wishlist-value {
+  margin-bottom: 48px;
+  color: #fff;
+  background-color: #ff7979;
+  border-radius: 50%;
+  padding: 4px 7px 4px 7px;
+  font-size: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .company-name {
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .search-container {
+    margin-left: 12px;
+  }
+}
